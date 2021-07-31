@@ -4,6 +4,10 @@ import requests
 import unicodedata
 
 
+localidad = "palermo"
+inmueble = "departamento"
+
+
 def pagina(num):
     url = "https://www.properati.com.ar/s/palermo/departamento/alquiler?page=" + str(num)
     response = requests.get(url)
